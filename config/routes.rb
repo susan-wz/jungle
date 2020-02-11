@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     root to: 'dashboard#show'
     resources :products, except: [:show]
     resources :categories, except: [:show]
-    resources :sales, only: [:index, :new, :create, :destroy]
+    resources :sales, except: [:show]
   end
 
   get '/about' => 'about#show'
