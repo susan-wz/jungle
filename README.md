@@ -6,6 +6,7 @@ We were given base code for this project with the intention of learning how to w
  - user authentication
  - the product sold out badge
  - functionality for admins to manage product categories
+ - functionality for admins to manage storewide sales
  - enhancing the order details page
  - security for the admin section
  - email confirmations once an order has been placed
