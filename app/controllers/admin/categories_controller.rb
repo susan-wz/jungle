@@ -20,6 +20,29 @@ class Admin::CategoriesController < ApplicationController
     end
   end
 
+  def edit
+    @category = Category.find params[:id]
+  end
+
+  def update
+    @category = Category.find params[:id]
+    if @category.update(category_params)
+      redirect_to [:admin, :categories], notice: 'Category updated!'
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @category = Category.find params[:id]
+    if @category.products.count == 0
+      @category.destroy
+      redirect_to [:admin, :categories], notice: "Category deleted!"
+    else
+      redirect_to [:admin, :categories], notice: "Category can't be deleted when it contains products."
+    end
+  end
+
   private
 
   def category_params
