@@ -7,8 +7,16 @@
 @import "products";
 
 // Global
+
+html {
+  height: 100%
+}
+
 body {
+  position: relative;
+  min-height: 100%;
   padding-top: 70px;
+  padding-bottom: 12rem;
 }
 
 // Bootstrap adjustments
@@ -20,4 +28,9 @@ footer.page-footer {
   background-color: #f8f8f8;
   border-top: 1px solid #e7e7e7;
   padding: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
 }
