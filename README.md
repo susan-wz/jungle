@@ -1,7 +1,13 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+Jungle is a mini e-commerce application built with Rails 4.2. I worked on this project during week 9 of the Lighthouse Labs bootcamp. 
 
+We were given base code for this project with the intention of learning how to work with new and unfamiliar code when joining a project that's already been built. I had to familiarize myself with the code and then add a number of features to it: 
+ - user authentication
+ - the product sold out badge
+ - functionality for admins to manage product categories
+ - enhancing the order details page
+ - security for the admin section
 
 ## Setup
 
@@ -25,3 +31,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+Used for testing: 
+* Capybara
+* Poltergeist
+* Database Cleaner
