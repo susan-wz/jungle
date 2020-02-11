@@ -5,4 +5,8 @@
   <td>
     <p><%= category.products.count %></p>
   </td>
+    <td>
+    <%= link_to fa_icon('pencil'), [:edit, :admin, category], class: 'btn btn-sm btn-info'%>
+    <%= link_to fa_icon('trash'), [:admin, category], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
+  </td>
 </tr>
