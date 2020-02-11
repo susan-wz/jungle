@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root to: 'dashboard#show'
-    resources :products, except: [:edit, :update, :show]
+    resources :products, except: [:show]
     resources :categories, only: [:index, :new, :create]
     resources :sales, only: [:index, :new, :create, :destroy]
   end
