@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to product page from home page by clicking on a product", type: :feature, js:true do
+RSpec.feature "User can add an item to cart and cart will increase by 1", type: :feature, js:true do
 
   # SETUP
   before :each do
@@ -17,18 +17,17 @@ RSpec.feature "Visitor navigates to product page from home page by clicking on a
     end
   end
 
-  scenario "They can click on a product and it takes them to the product details page" do
+  scenario "They can click on the add to cart button and it increases the cart by 1" do
     # ACT
     visit root_path
-    click_on @category.products.first.name
+    click_button("Add", match: :first)
 
     # DEBUG
     # save_and_open_screenshot
 
     # VERIFY
-    expect(page).to have_text @category.products.first.quantity
+    expect(page).to have_text "My Cart (1)"
     # puts page.html
-
   end
 
 end
