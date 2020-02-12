@@ -16,12 +16,17 @@ body {
   position: relative;
   min-height: 100%;
   padding-top: 70px;
-  padding-bottom: 12rem;
+  padding-bottom: 14rem;
 }
 
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+.dropdown-menu > li > span {
+  font-style: italic;
+  padding: 3px 20px;
 }
 
 footer.page-footer {
