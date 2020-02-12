@@ -1,9 +1,24 @@
-<h1>Login</h1>
+<section class="user-new">
 
-<%= form_tag '/login' do %>
+  <div class="box-outline">
+    <div class="center-header">
+      <h2>Login</h2>
+    </div>
+    <%= form_tag '/login', :html => {:class => "form-horizontal center"} do %>
+      <div class="form-group row">
+        <%= label :email, "Email: ", class: "col-md-4 control-label" %>
+        <div class="col-md-8">
+          <%= text_field_tag :email %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <%= label :password, "Password: ", class: "col-md-4 control-label" %>
+        <div class="col-md-8">
+          <%= password_field_tag :password %>
+        </div>
+      </div>
+      <%= submit_tag "Submit", class: "btn btn-default btn-primary btn-block" %>
+    <% end %>
+  </div>
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
-
-<% end %>
+</section>

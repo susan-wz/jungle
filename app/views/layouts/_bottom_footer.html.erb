@@ -1,0 +1,63 @@
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Jungle</h5>
+        <p>This is a rails project made by Susan Zhang during the Lighthouse Labs bootcamp in February 2020.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Site Map</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <%= link_to 'About Us', :about %>
+          </li>
+          <li>
+          <%= link_to cart_path do %>
+            My Cart
+          <% end %>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase text-danger"><%= fa_icon 'lock', text: 'Admin' %></h5>
+
+        <ul class="list-unstyled">
+            <li><%= link_to 'Dashboard', [:admin, :root] %></li>
+            <li><%= link_to 'Products',  [:admin, :products] %></li>
+            <li><%= link_to 'Categories',  [:admin, :categories] %></li>
+            <li><%= link_to 'Sales',  [:admin, :sales] %></li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->

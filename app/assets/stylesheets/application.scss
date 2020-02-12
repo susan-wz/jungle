@@ -5,13 +5,38 @@
 
 // App
 @import "products";
+@import "users";
 
 // Global
+
+html {
+  height: 100%
+}
+
 body {
+  position: relative;
+  min-height: 100%;
   padding-top: 70px;
+  padding-bottom: 14rem;
 }
 
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+.dropdown-menu > li > span {
+  font-style: italic;
+  padding: 3px 20px;
+}
+
+footer.page-footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+  padding: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 136px;
 }
