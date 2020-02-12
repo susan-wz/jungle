@@ -25,10 +25,12 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Categories</a>
+            <%= link_to 'About Us', :about %>
           </li>
           <li>
-            <a href="#!">My Cart</a>
+          <%= link_to cart_path do %>
+            My Cart
+          <% end %>
           </li>
         </ul>
 
@@ -39,15 +41,13 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Company</h5>
+        <h5 class="text-uppercase text-danger"><%= fa_icon 'lock', text: 'Admin' %></h5>
 
         <ul class="list-unstyled">
-          <li>
-            <a href="#!">About Us</a>
-          </li>
-          <li>
-            <a href="#!">Admin</a>
-          </li>
+            <li><%= link_to 'Dashboard', [:admin, :root] %></li>
+            <li><%= link_to 'Products',  [:admin, :products] %></li>
+            <li><%= link_to 'Categories',  [:admin, :categories] %></li>
+            <li><%= link_to 'Sales',  [:admin, :sales] %></li>
         </ul>
 
       </div>
