@@ -5,11 +5,13 @@ Jungle is a mini e-commerce application built with Rails 4.2. I worked on this p
 We were given base code for this project with the intention of learning how to work with new and unfamiliar code when joining a project that's already been built. I had to familiarize myself with the code and then add a number of features to it: 
  - user authentication
  - the product sold out badge
+ - functionality for admins to manage products
  - functionality for admins to manage product categories
  - functionality for admins to manage storewide sales
  - enhancing the order details page
  - security for the admin section
  - email confirmations once an order has been placed
+ - changing the purchase flow in the index, product and cart pages
 
 ## Setup
 
