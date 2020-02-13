@@ -12,6 +12,7 @@ We were given base code for this project with the intention of learning how to w
  - security for the admin section
  - email confirmations once an order has been placed
  - changing the purchase flow in the index, product and cart pages
+ - client and server side validation for admins creating new products, categories, and sales
 
 ## Setup
 
