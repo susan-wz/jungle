@@ -33,7 +33,7 @@ html {
 body {
   position: relative;
   min-height: 100%;
-  padding-top: 70px;
+  padding-top: 105px;
   padding-bottom: 18rem;
 }
 
@@ -59,19 +59,25 @@ footer.page-footer {
 }
 
 .navbar-default {
-  height: 100px;
+  height: 105px;
+  .container {
+    height: 100%;
+  }
 }
 
 #navbar {
-  height: 100%;
-  display: flex;
+  height: 100% !important;
+  display: flex !important;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .navbar-brand {
   display: flex;
+  height: 100%;
   h1 {
     font-family: 'Fredoka One', sans-serif;
     color: darkgreen;
+    margin-bottom: 20px;
   }
 }
