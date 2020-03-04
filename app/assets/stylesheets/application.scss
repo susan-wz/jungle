@@ -2,6 +2,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 // App
 @import "products";
@@ -9,8 +11,23 @@
 
 // Global
 
+@font-face {
+  font-family: 'Rubik';
+  src: url('Rubik/Rubik-Regular.ttf') format('truetype');
+  src: url('Rubik/Rubik-Bold.ttf') format('truetype');
+  src: url('Rubik/Rubik-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fredoka One';
+  src: url('Fredoka One/Fredoka-Regular.ttf') format('truetype');
+  src: url('Fredoka One/Fredoka-Bold.ttf') format('truetype');
+  src: url('Fredoka One/Fredoka-Italic.ttf') format('truetype');
+}
+
 html {
-  height: 100%
+  height: 100%;
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -39,4 +56,22 @@ footer.page-footer {
   right: 0;
   bottom: 0;
   height: 136px;
+}
+
+.navbar-default {
+  height: 100px;
+}
+
+#navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  h1 {
+    font-family: 'Fredoka One', sans-serif;
+    color: darkgreen;
+  }
 }
