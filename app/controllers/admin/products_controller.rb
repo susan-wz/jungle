@@ -48,7 +48,7 @@ class Admin::ProductsController < ApplicationController
       :description,
       :category_id,
       :quantity,
-      :image,
+      :img_url,
       :price
     )
   end

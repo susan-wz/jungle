@@ -1,6 +1,6 @@
 <tr>
   <td>
-    <%= image_tag line_item.product.image.tiny, class: 'main-img' %>
+    <%= image_tag(line_item.product.img_url, alt: line_item.product.name, height: 100, width: 100, class: 'main-img') %>
   </td>
   <td>
     <%= line_item.product.name %>

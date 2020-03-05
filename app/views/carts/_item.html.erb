@@ -1,6 +1,6 @@
 <tr>
   <td>
-    <%= image_tag product.image.tiny %>
+    <%= image_tag(product.img_url, alt: product.name, height: 100, width: 100) %>
   </td>
   <td>
     <h4><%= product.name %></h4>
